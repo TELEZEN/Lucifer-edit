@@ -111,10 +111,10 @@ async def start(bot, message):
     else:
         await message.reply_text(
             START_MSG,
-            await message.reply_photo(
+        await message.reply_photo(
             photo=random.choice(PICS),
             parse_mode="html",
-            disable_web_page_preview=True,
+            disable_webpage_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
