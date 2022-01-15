@@ -109,9 +109,8 @@ async def start(bot, message):
             )
         )
     else:
- await message.reply_photo(
-            photo=(PICS),
-            parse_mode="Markdown",
+ await message.reply_photo(PICS),
+            parse_mode="html",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
