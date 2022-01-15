@@ -113,7 +113,7 @@ async def start(bot, message):
             START_MSG,
             await message.reply_photo(
             photo=random.choice(PICS),
-            parse_mode="Markdown",
+            parse_mode="html",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
